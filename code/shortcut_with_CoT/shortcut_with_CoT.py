@@ -36,7 +36,7 @@ def encode_image(image_path, max_pixels=2800000):
             img.save(buffer, format="JPEG", quality=90)
             return base64.b64encode(buffer.getvalue()).decode('utf-8')
     except Exception as e:
-        print(f"图片处理失败 {image_path}: {e}")
+        print(f"image failed: {image_path}: {e}")
         return None
 
 def query_vllm(image_base64_list):
@@ -113,7 +113,7 @@ def process_category(category_path):
     cat_name = category_path.name
     subtask_dir = category_path / "subtask1"
     ans_path = category_path / "ans.json"
-    pic_map_path = category_path / "picture_name_random.json"
+    pic_map_path = category_path / "test.json"
 
     if not (ans_path.exists() and pic_map_path.exists()): return
 
