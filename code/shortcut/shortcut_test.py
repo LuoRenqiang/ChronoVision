@@ -114,7 +114,7 @@ def process_category(category_path):
     cat_name = category_path.name
     subtask_dir = category_path / "subtask1"
     ans_path = category_path / "ans.json"
-    pic_map_path = category_path / "picture_name_random.json"
+    pic_map_path = category_path / "test.json"
 
     if not (ans_path.exists() and pic_map_path.exists()):
         return
