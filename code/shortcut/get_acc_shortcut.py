@@ -6,7 +6,6 @@ BASE_DIR = "/hd/images"
 
 def main():
     base_path = Path(BASE_DIR)
-    # 获取所有以 _images 结尾的文件夹
     categories = sorted([d for d in base_path.iterdir() if d.is_dir() and d.name.endswith("_images")])
     
     print(f"{'name (Category)':<25} | {'num':<6} | {'correct':<6} | {'acc'}")
@@ -41,4 +40,5 @@ def main():
         print(f"{' (Overall)':<25} | {total_all:<6} | {correct_all:<6} | {overall_acc:.2f}%")
 
 if __name__ == "__main__":
+
     main()
