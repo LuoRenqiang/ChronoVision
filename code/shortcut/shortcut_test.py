@@ -12,7 +12,6 @@ from PIL import Image, ImageFile
 Image.MAX_IMAGE_PIXELS = None
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-# --- 配置信息 ---
 API_URL = "http://localhost:8000/v1/chat/completions"
 MODEL_NAME = "Qwen3-VL-4B-Instruct"
 BASE_DIR = "/hd/images"
@@ -43,7 +42,7 @@ def encode_image(image_path, max_pixels=2800000):
             img.save(buffer, format="JPEG", quality=90)
             return base64.b64encode(buffer.getvalue()).decode('utf-8')
     except Exception as e:
-        print(f"图片处理失败 {image_path}: {e}")
+        print(f"image failed: {image_path}: {e}")
         return None
 
 def query_vllm(image_base64_list):
