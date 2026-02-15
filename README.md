@@ -13,16 +13,16 @@
 
 This repository contains the official code and evaluation data for the paper **"Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models"**.
 
-[cite_start]We introduce **ChronoVision**, a novel benchmark designed to evaluate how Vision-Language Models (VLMs) perceive and reason about time[cite: 57]. Unlike existing benchmarks that focus on simple frame sequencing, our work delves into:
-- [cite_start]**🕵️‍♂️ Chronological Logic:** Reasoning about historical artifacts and object evolution[cite: 58].
-- [cite_start]**📰 Cross-Modal Alignment:** Synchronizing visual evidence with time-sensitive news text[cite: 59].
-- [cite_start]**⚠️ Shortcut Bias Detection:** Exposing the "grayscale equals old" heuristic that many SOTA models suffer from[cite: 60, 61].
+We introduce **ChronoVision**, a novel benchmark designed to evaluate how Vision-Language Models (VLMs) perceive and reason about time. Unlike existing benchmarks that focus on simple frame sequencing, our work delves into:
+- **🕵️‍♂️ Chronological Logic:** Reasoning about historical artifacts and object evolution.
+- **📰 Cross-Modal Alignment:** Synchronizing visual evidence with time-sensitive news text.
+- **⚠️ Shortcut Bias Detection:** Exposing the "grayscale equals old" heuristic that many SOTA models suffer from.
 
 ---
 
 ## 📚 Datasets
 
-[cite_start]Our benchmark consists of three specialized datasets, meticulously curated to test different aspects of temporal reasoning[cite: 59, 244].
+Our benchmark consists of three specialized datasets, meticulously curated to test different aspects of temporal reasoning.
 
 **📥 Download:** [HuggingFace Dataset](https://huggingface.co/datasets/Q1anK/ChronoVision)
 
@@ -36,17 +36,19 @@ This repository contains the official code and evaluation data for the paper **"
 
 ## 🏆 Leaderboard
 
-[cite_start]Here is a summary of the zero-shot performance of representative VLMs on our benchmark (Score range: 0-100)[cite: 846].
+Here is a summary of the zero-shot performance of representative VLMs on our benchmark (Score range: 0-100).
 
-| Model | Type | Overall Score | Artifacts Acc | Shortcut Score | News Score |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Gemini-2.5-Pro** | Closed | **67.17** 🥇 | 44.23 | 78.75 | 55.58 |
-| **GPT-5.2** | Closed | 49.96 🥈 | 40.14 | 56.83 | 49.73 |
-| **Qwen3-VL-235B** | Open | 49.92 🥉 | 49.94 | 62.36 | 33.80 |
-| **Qwen3-VL-8B** | Open | 44.47 | 38.43 | 61.32 | 26.13 |
-| **InternVL3.5-8B** | Open | 29.06 | 24.86 | 24.92 | 12.43 |
+| Model | Type | Overall Score | 
+| :--- | :--- | :---: |
+| **Gemini-2.5-Pro** | Closed | **67.17** 🥇 | 
+| **GPT-5.2** | Closed | 49.96 🥈 | 
+| **Qwen3-VL-235B-A22B-Instruct** | Open | 49.92 🥉 | 
+| **Qwen3-VL-8B-Instruct** | Open | 44.47 |
+| **MiniCPM-V-4.5** | Open | 38.68 | 
+| **GLM-4.1V-9B-Thinking** | Open | 37.35 | 
+| **InternVL3.5-8B** | Open | 29.06 | 
 
-> [cite_start]**Note:** We identify a significant performance gap between closed-source and open-source models, though large-scale open models are catching up[cite: 1051, 1053].
+> **Note:** We identify a significant performance gap between closed-source and open-source models, though large-scale open models are catching up.
 
 ---
 
