@@ -32,7 +32,6 @@ Our benchmark consists of three specialized datasets, meticulously curated to te
 | **SPEED** | Sports, Politics, Electronics, Emergency, Diversity | Modern event chronology | [cite_start]1952 - 2025 (1,028 images) [cite: 426, 427] |
 | **HistNews**| Historical News | Text-Image chronological alignment | [cite_start]1946 - 2025 (400 events) [cite: 450] |
 
-![dataset_image](./assets/dataset_figure.svg)
 
 ---
 
