@@ -3,9 +3,7 @@
 # ⏳ Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in VLMs
 
 <a href="https://huggingface.co/datasets/Q1anK/ChronoVision"><img src="https://img.shields.io/badge/Data-HuggingFace-yellow.svg" alt="Data"></a>
-<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/Paper-ArXiv-red.svg" alt="Paper"></a>
 <a href="https://github.com/vllm-project/vllm"><img src="https://img.shields.io/badge/Inference-vLLM-blue.svg" alt="vLLM"></a>
-<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License"></a>
 
 ![main_image](./assets/main_github.svg)
 
