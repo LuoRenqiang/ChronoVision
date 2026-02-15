@@ -1,5 +1,6 @@
-# ChronoVision
-Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models.
+# Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models.
+
+This repository contains the official code and data for the paper 'Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models.'. We introduce a novel benchmark to evaluate chronological reasoning in VLMs across historical artifacts, modern events, and cross-modal news alignment. We also expose the 'grayscale equals old' shortcut bias.
 
 ![main_image](./assets/main_github.svg)
 
