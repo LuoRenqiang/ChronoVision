@@ -1,6 +1,9 @@
 # ChronoVision
 Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models.
 
+![main_image](./assets/main_github.svg)
+
+
 The datasets of images are available at: https://huggingface.co/datasets/Q1anK/ChronoVision
 
 use vllm to quick start:
