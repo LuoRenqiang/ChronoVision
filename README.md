@@ -24,13 +24,13 @@ We introduce **ChronoVision**, a novel benchmark designed to evaluate how Vision
 
 Our benchmark consists of three specialized datasets, meticulously curated to test different aspects of temporal reasoning.
 
-**📥 Download:** [HuggingFace Dataset](https://huggingface.co/datasets/Q1anK/ChronoVision)
+**📥 Download:** [HuggingFace Dataset](https://huggingface.co/datasets/Q1anK/ChronoVison_Dataset)
 
 | Dataset | Full Name | Focus | Scope |
 | :--- | :--- | :--- | :--- |
-| **CHA** | Chinese Historical Artifacts | Fine-grained artifact evolution | [cite_start]Tang to Qing Dynasties (887 images) [cite: 268] |
-| **SPEED** | Sports, Politics, Electronics, Emergency, Diversity | Modern event chronology | [cite_start]1952 - 2025 (1,028 images) [cite: 426, 427] |
-| **HistNews**| Historical News | Text-Image chronological alignment | [cite_start]1946 - 2025 (400 events) [cite: 450] |
+| **CHA** | Chinese Historical Artifacts | Fine-grained artifact evolution | Tang to Qing Dynasties (887 images) |
+| **SPEED** | Sports, Politics, Electronics, Emergency, Diversity | Modern event chronology | 1952 - 2025 (1,028 images) |
+| **HistNews**| Historical News | Text-Image chronological alignment | 1946 - 2025 (400 events)  |
 
 
 ---
@@ -77,3 +77,6 @@ CUDA_VISIBLE_DEVICES=0,1 vllm serve ./Qwen3-VL-4B-Instruct \
   --max-model-len 32768 \
   --max-num-seqs 512
 ```
+### 3. Start benchmarking
+
+The **test & ans** folder displays the image and text locations required for each set of tests in all tasks. After restoring the tests, use the test scripts in the **code** folder
