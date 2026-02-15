@@ -14,7 +14,7 @@
 This repository contains the official code and evaluation data for the paper **"Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models"**.
 
 We introduce **ChronoVision**, a novel benchmark designed to evaluate how Vision-Language Models (VLMs) perceive and reason about time. Unlike existing benchmarks that focus on simple frame sequencing, our work delves into:
-- **🕵️‍♂️ Chronological Logic:** Reasoning about historical artifacts and object evolution.
+- **🕵️‍♂️ Chronological Logic:** Reasoning about historical artifacts and modern news.
 - **📰 Cross-Modal Alignment:** Synchronizing visual evidence with time-sensitive news text.
 - **⚠️ Shortcut Bias Detection:** Exposing the "grayscale equals old" heuristic that many SOTA models suffer from.
 
@@ -59,3 +59,16 @@ We recommend using [vLLM](https://github.com/vllm-project/vllm) for high-through
 ### 1. Install Requirements
 ```bash
 pip install vllm
+、、、
+
+### 2. Launch Server
+、、、bash
+# Example for Qwen3-VL-4B-Instruct
+CUDA_VISIBLE_DEVICES=0,1 vllm serve ./Qwen3-VL-4B-Instruct \
+  --served-model-name Qwen3-VL-4B-Instruct \
+  --trust-remote-code \
+  --tensor-parallel-size 2 \
+  --gpu-memory-utilization 0.7 \
+  --max-model-len 32768 \
+  --max-num-seqs 512
+、、、
