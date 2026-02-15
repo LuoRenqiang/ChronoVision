@@ -79,4 +79,6 @@ CUDA_VISIBLE_DEVICES=0,1 vllm serve ./Qwen3-VL-4B-Instruct \
 ```
 ### 3. Start benchmarking
 
-The **test & ans** folder displays the image and text locations required for each set of tests in all tasks. After restoring the tests, use the test scripts in the **code** folder
+The **test & ans** folder displays the image and text locations required for each set of tests in all tasks. 
+
+After restoring the tests, use the test scripts in the **code** folder
