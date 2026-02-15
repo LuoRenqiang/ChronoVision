@@ -58,12 +58,16 @@ We recommend using [vLLM](https://github.com/vllm-project/vllm) for high-through
 
 ### 1. Install Requirements
 ```bash
-pip install vllm
-、、、
+pip install vllm,requests,pillow,numpy 
+```
+
+If you want to convert color images to grayscale images by yourself, add opencv:
+```bash
+pip install opencv-python 
+```
 
 ### 2. Launch Server
-、、、bash
-# Example for Qwen3-VL-4B-Instruct
+```bash
 CUDA_VISIBLE_DEVICES=0,1 vllm serve ./Qwen3-VL-4B-Instruct \
   --served-model-name Qwen3-VL-4B-Instruct \
   --trust-remote-code \
@@ -71,4 +75,4 @@ CUDA_VISIBLE_DEVICES=0,1 vllm serve ./Qwen3-VL-4B-Instruct \
   --gpu-memory-utilization 0.7 \
   --max-model-len 32768 \
   --max-num-seqs 512
-、、、
+```
